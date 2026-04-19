@@ -5,7 +5,9 @@
   "main": "src/main.js",
   "scripts": {
     "dev": "vite",
-    "build": "vite build"
+    "build": "vite build",
+    "mailhog": "start C:\\Development\\Tools\\MailHog\\MailHog_windows_amd64.exe",
+    "start:all": "npm run mailhog && npm run dev"
   },
   "author": "JoranPeeters",
   "license": "MIT",
