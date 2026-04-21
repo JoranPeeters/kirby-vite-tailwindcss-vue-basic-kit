@@ -3,23 +3,23 @@
     "description": "A Kirby CMS template with Vite, Vue.js, and Tailwind CSS.",
     "type": "project",
     "require": {
-        "getkirby/cms": "^4.3",
-        "arnoson/kirby-vite": "^5.3"
+        "getkirby/cms": "^5.3",
+        "arnoson/kirby-vite": "^5.7"
     },
     "license": "MIT",
     "config": {
         "allow-plugins": {
-            "getkirby/composer-installer": true
+        "getkirby/composer-installer": true
         }
     },
     "scripts": {
         "post-install-cmd": [
-            "npm install",
-            "npm run build"
+        "npm install",
+        "npm run build"
         ],
         "post-update-cmd": [
-            "npm install",
-            "npm run build"
+        "npm install",
+        "npm run build"
         ]
     }
 }

@@ -1,6 +1,9 @@
 # macOS system files
 .DS_Store
 
+# Local Herd server config
+.herd
+
 # Node.js dependencies
 node_modules/
 
@@ -42,3 +45,6 @@ site/plugins/*
 
 # Ignore environment configuration
 .env
+
+# Local environment configs (hostname-based)
+/site/config/config.*.php

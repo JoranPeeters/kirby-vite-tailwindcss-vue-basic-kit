@@ -1,2 +1,5 @@
 Title: Kirby Vite Vue TailwindCSS Basic Example
 
+----
+
+Uuid: 8vkcigget3lewit5

@@ -1,6 +1,3 @@
 <?php snippet('header') ?>
-<div id="app">
-  <my-component></my-component>
-</div>
+<div id="app"></div>
 <?php snippet('footer') ?>
-

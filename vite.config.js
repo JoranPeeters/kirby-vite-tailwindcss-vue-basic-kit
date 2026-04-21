@@ -1,24 +1,23 @@
-import { resolve } from 'path'
+import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
+import tailwindcss from '@tailwindcss/vite'
 import kirby from 'vite-plugin-kirby'
 
-export default ({ mode }) => ({
-  root: 'src',
-  base: mode === 'development' ? '/' : '/dist/',
-
+export default defineConfig({
+  plugins: [
+    vue(),
+    tailwindcss(),
+    kirby(),
+  ],
+  server: {
+    cors: true,
+    origin: 'http://localhost:5173',
+  },
+  publicDir: false,
   build: {
-    outDir: resolve(process.cwd(), 'public/dist'),
-    emptyOutDir: true,
+    outDir: 'public/dist',
     rollupOptions: {
-      input: resolve(process.cwd(), 'src/main.js')
-    }
+      input: 'src/main.js',
+    },
   },
-
-  resolve: {
-    alias: {
-      vue: 'vue/dist/vue.esm-bundler.js'
-    }
-  },
-
-  plugins: [vue(), kirby()]
 })
