@@ -18,10 +18,7 @@
   </div>
 </template>
 
-<script>
-export default {
-  name: 'MyComponent'
-}
+<script setup>
 </script>
 
 <style scoped>
